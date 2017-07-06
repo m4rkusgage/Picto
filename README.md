@@ -1,2 +1,1 @@
-# Picto
-a content viewing application
+# Project Picto: A Content Viewing Application
