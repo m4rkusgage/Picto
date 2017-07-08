@@ -8,19 +8,26 @@
 
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
+#import "DLOAuthCredential.h"
 
 typedef void (^DLResultBlock)(id result, NSError *error);
 
+typedef enum : NSUInteger {
+    DLAccessLevelApp,
+    DLAccessLevelOAuth
+} DLAccessLevel;
+
 @interface DLDribbbleAPI : AFHTTPSessionManager
 
+@property (strong, nonatomic) DLOAuthCredential *credential;
 @property (assign, nonatomic) NSInteger perPage;
-@property (copy, nonatomic) NSString *accessToken;
-@property (copy, nonatomic) NSString *apiCode;
 
 + (DLDribbbleAPI *)sharedInstance;
 
 - (void)authorize;
-- (void)getAccessToken;
+- (void)getAccessTokenWithView:(UIView *)view completionHandler:(DLResultBlock)completionHandler;
+- (void)getAccessWithAppOnView:(UIView *)view completionHandler:(DLResultBlock)completionHandler;
 - (void)popularShots:(int)page completionHandler:(DLResultBlock)completionHandler;
 
+- (void)setAuthorizationLevel:(DLAccessLevel)access;
 @end

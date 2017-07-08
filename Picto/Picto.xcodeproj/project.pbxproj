@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1E229C1F0F3EA7004D8DC6 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229B1F0F3EA6004D8DC6 /* Constants.m */; };
+		8C1E229D1F0F3EA7004D8DC6 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229B1F0F3EA6004D8DC6 /* Constants.m */; };
+		8C1E22A01F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */; };
+		8C1E22A11F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */; };
+		8C1E22A41F0F5270004D8DC6 /* DLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */; };
+		8C1E22A51F0F5270004D8DC6 /* DLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */; };
+		8C1E22AA1F0F5309004D8DC6 /* DLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */; };
+		8C1E22AB1F0F5309004D8DC6 /* DLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */; };
+		8C1E22AE1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */; };
+		8C1E22AF1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */; };
+		8C1E22B31F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */; };
+		8C1E22B41F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */; };
 		8C75D7341F0EBD3C00D6F0E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D7331F0EBD3C00D6F0E0 /* main.m */; };
 		8C75D7371F0EBD3C00D6F0E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D7361F0EBD3C00D6F0E0 /* AppDelegate.m */; };
-		8C75D73A1F0EBD3C00D6F0E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D7391F0EBD3C00D6F0E0 /* ViewController.m */; };
 		8C75D73D1F0EBD3C00D6F0E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C75D73B1F0EBD3C00D6F0E0 /* Main.storyboard */; };
 		8C75D73F1F0EBD3C00D6F0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C75D73E1F0EBD3C00D6F0E0 /* Assets.xcassets */; };
 		8C75D7421F0EBD3C00D6F0E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C75D7401F0EBD3C00D6F0E0 /* LaunchScreen.storyboard */; };
@@ -35,12 +46,21 @@
 		31D02164AAC289D9C264E92F /* Pods-PictoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PictoTests/Pods-PictoTests.release.xcconfig"; sourceTree = "<group>"; };
 		690EEF5C8166136567AAADDE /* Pods-Picto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picto/Pods-Picto.release.xcconfig"; sourceTree = "<group>"; };
 		7A3278C008100C427AB45D99 /* libPods-Picto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1E229A1F0F3EA6004D8DC6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = API/Constants.h; sourceTree = "<group>"; };
+		8C1E229B1F0F3EA6004D8DC6 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = API/Constants.m; sourceTree = "<group>"; };
+		8C1E229E1F0F4D2F004D8DC6 /* DLOAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLOAuthCredential.h; path = API/DLOAuthCredential.h; sourceTree = "<group>"; };
+		8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLOAuthCredential.m; path = API/DLOAuthCredential.m; sourceTree = "<group>"; };
+		8C1E22A21F0F5270004D8DC6 /* DLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLLoginView.h; path = UI/Views/DLLoginView.h; sourceTree = "<group>"; };
+		8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLLoginView.m; path = UI/Views/DLLoginView.m; sourceTree = "<group>"; };
+		8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DLLoginView.xib; path = UI/Nibs/DLLoginView.xib; sourceTree = "<group>"; };
+		8C1E22AC1F0F5414004D8DC6 /* DLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLLoginViewController.h; path = ViewControllers/DLLoginViewController.h; sourceTree = "<group>"; };
+		8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLLoginViewController.m; path = ViewControllers/DLLoginViewController.m; sourceTree = "<group>"; };
+		8C1E22B11F0F78F1004D8DC6 /* DLShotLIstingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLShotLIstingTableViewController.h; path = ViewControllers/DLShotLIstingTableViewController.h; sourceTree = "<group>"; };
+		8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLShotLIstingTableViewController.m; path = ViewControllers/DLShotLIstingTableViewController.m; sourceTree = "<group>"; };
 		8C75D72F1F0EBD3C00D6F0E0 /* Picto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C75D7331F0EBD3C00D6F0E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C75D7351F0EBD3C00D6F0E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8C75D7361F0EBD3C00D6F0E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8C75D7381F0EBD3C00D6F0E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8C75D7391F0EBD3C00D6F0E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8C75D73C1F0EBD3C00D6F0E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C75D73E1F0EBD3C00D6F0E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C75D7411F0EBD3C00D6F0E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +94,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1E22A61F0F5279004D8DC6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22A81F0F528C004D8DC6 /* Nibs */,
+				8C1E22A71F0F5282004D8DC6 /* Views */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8C1E22A71F0F5282004D8DC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22A21F0F5270004D8DC6 /* DLLoginView.h */,
+				8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8C1E22A81F0F528C004D8DC6 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		8C1E22B01F0F5419004D8DC6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22AC1F0F5414004D8DC6 /* DLLoginViewController.h */,
+				8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */,
+				8C1E22B11F0F78F1004D8DC6 /* DLShotLIstingTableViewController.h */,
+				8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		8C75D7261F0EBD3A00D6F0E0 = {
 			isa = PBXGroup;
 			children = (
@@ -100,13 +157,13 @@
 				8C75D7571F0ECD5A00D6F0E0 /* API */,
 				8C75D7351F0EBD3C00D6F0E0 /* AppDelegate.h */,
 				8C75D7361F0EBD3C00D6F0E0 /* AppDelegate.m */,
-				8C75D7381F0EBD3C00D6F0E0 /* ViewController.h */,
-				8C75D7391F0EBD3C00D6F0E0 /* ViewController.m */,
 				8C75D73B1F0EBD3C00D6F0E0 /* Main.storyboard */,
 				8C75D73E1F0EBD3C00D6F0E0 /* Assets.xcassets */,
 				8C75D7401F0EBD3C00D6F0E0 /* LaunchScreen.storyboard */,
 				8C75D7431F0EBD3D00D6F0E0 /* Info.plist */,
 				8C75D7321F0EBD3C00D6F0E0 /* Supporting Files */,
+				8C1E22A61F0F5279004D8DC6 /* UI */,
+				8C1E22B01F0F5419004D8DC6 /* ViewControllers */,
 			);
 			path = Picto;
 			sourceTree = "<group>";
@@ -133,6 +190,10 @@
 			children = (
 				8C75D75A1F0ED05900D6F0E0 /* DLDribbbleAPI.h */,
 				8C75D75B1F0ED05900D6F0E0 /* DLDribbbleAPI.m */,
+				8C1E229A1F0F3EA6004D8DC6 /* Constants.h */,
+				8C1E229B1F0F3EA6004D8DC6 /* Constants.m */,
+				8C1E229E1F0F4D2F004D8DC6 /* DLOAuthCredential.h */,
+				8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -246,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1E22AA1F0F5309004D8DC6 /* DLLoginView.xib in Resources */,
 				8C75D7421F0EBD3C00D6F0E0 /* LaunchScreen.storyboard in Resources */,
 				8C75D73F1F0EBD3C00D6F0E0 /* Assets.xcassets in Resources */,
 				8C75D73D1F0EBD3C00D6F0E0 /* Main.storyboard in Resources */,
@@ -256,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1E22AB1F0F5309004D8DC6 /* DLLoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +422,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C75D73A1F0EBD3C00D6F0E0 /* ViewController.m in Sources */,
+				8C1E22A01F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */,
+				8C1E229C1F0F3EA7004D8DC6 /* Constants.m in Sources */,
+				8C1E22A41F0F5270004D8DC6 /* DLLoginView.m in Sources */,
 				8C75D7371F0EBD3C00D6F0E0 /* AppDelegate.m in Sources */,
+				8C1E22B31F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */,
+				8C1E22AE1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */,
 				8C75D75C1F0ED05900D6F0E0 /* DLDribbbleAPI.m in Sources */,
 				8C75D7341F0EBD3C00D6F0E0 /* main.m in Sources */,
 			);
@@ -370,8 +437,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1E22AF1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */,
 				8C75D75D1F0ED05900D6F0E0 /* DLDribbbleAPI.m in Sources */,
 				8C75D74D1F0EBD3D00D6F0E0 /* PictoTests.m in Sources */,
+				8C1E22A11F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */,
+				8C1E22B41F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */,
+				8C1E22A51F0F5270004D8DC6 /* DLLoginView.m in Sources */,
+				8C1E229D1F0F3EA7004D8DC6 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
