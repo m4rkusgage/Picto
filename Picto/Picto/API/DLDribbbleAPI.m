@@ -9,6 +9,7 @@
 #import "DLDribbbleAPI.h"
 #import "MBProgressHUD.h"
 #import "Constants.h"
+#import "DLShot.h"
 
 @interface DLDribbbleAPI ()
 @property (strong, nonatomic) MBProgressHUD *hud;
@@ -127,7 +128,17 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (resultsBlock)
         {
-            resultsBlock(responseObject, nil);
+            if ([responseObject isKindOfClass:[NSArray class]]) {
+                NSMutableArray *shotsArray = [[NSMutableArray alloc] init];
+                for (NSDictionary *shotDictionary in (NSArray *)responseObject) {
+                    DLShot *shot = [[DLShot alloc] init];
+                    [shot setDataWith:shotDictionary];
+                    [shotsArray addObject:shot];
+                }
+                resultsBlock(shotsArray, nil);
+            } else {
+                resultsBlock(nil, nil);
+            }
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (resultsBlock)

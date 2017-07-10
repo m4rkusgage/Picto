@@ -8,9 +8,13 @@
 
 #import "DLShotLIstingTableViewController.h"
 #import "DLDribbbleAPI.h"
+#import "DLShotTableViewCell.h"
+#import "DLShot.h"
 
 @interface DLShotLIstingTableViewController ()
+@property (assign, nonatomic) int pageNumber;
 @property (strong, nonatomic) DLDribbbleAPI *apiClient;
+@property (strong, nonatomic) NSArray *shotList;
 @end
 
 @implementation DLShotLIstingTableViewController
@@ -18,10 +22,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.apiClient popularShots:1 completionHandler:^(id result, NSError *error) {
-        NSArray *shots = (NSArray *)result;
-        NSLog(@"%@",shots);
+    self.pageNumber = 1;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"DLShotTableViewCell" bundle:nil]
+         forCellReuseIdentifier:@"shotCell"];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 500;
+    
+    [self.apiClient popularShots:self.pageNumber completionHandler:^(id result, NSError *error) {
+        self.pageNumber++;
+        self.shotList = (NSArray *)result;
+        NSLog(@"%@",self.shotList);
+        [self.tableView reloadData];
     }];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -45,26 +59,39 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.shotList count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
+    DLShotTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"shotCell" forIndexPath:indexPath];
+    
+    DLShot *shot = [self.shotList objectAtIndex:indexPath.row];
+    [cell addShotData:shot];
     // Configure the cell...
     
-    return cell;
+    return [cell updateCell];
 }
-*/
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == [self.shotList count] - 5) {
+        [self.apiClient popularShots:self.pageNumber completionHandler:^(id result, NSError *error) {
+            self.pageNumber++;
+            self.shotList = [self.shotList arrayByAddingObjectsFromArray:(NSArray *)result];
+            NSLog(@"%@",self.shotList);
+            [self.tableView reloadData];
+        }];
+    }
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
