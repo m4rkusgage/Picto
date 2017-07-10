@@ -8,9 +8,13 @@
 
 #import "AppDelegate.h"
 #import "DLDribbbleAPI.h"
+#import "DLLoginViewController.h"
+#import "DLOAuthCredential.h"
+#import "DLShotLIstingTableViewController.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) DLDribbbleAPI *apiClient;
+@property (strong, nonatomic) DLOAuthCredential *credential;
 @end
 
 @implementation AppDelegate
@@ -19,8 +23,30 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self.apiClient authorize];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
+    DLLoginViewController *loginController = [storyboard instantiateViewControllerWithIdentifier:@"DLLoginVIewController"];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginController];
+    self.window.rootViewController = navigationController;
+    
+    NSData *oAuthData = [[NSUserDefaults standardUserDefaults] objectForKey:@"oauthCredential"];
+
+    if (oAuthData) {
+        self.credential = [NSKeyedUnarchiver unarchiveObjectWithData:oAuthData];
+        if ([self.credential isLoggedIn]) {
+            [self.apiClient setAuthorizationLevel:DLAccessLevelOAuth];
+        } else {
+            [self.apiClient setAuthorizationLevel:DLAccessLevelApp];
+        }
+        DLShotLIstingTableViewController *listingTableViewController = [storyboard instantiateViewControllerWithIdentifier:@"ShotListingTableViewController"];
+        [navigationController pushViewController:listingTableViewController animated:NO];
+    } else {
+        self.credential = [DLOAuthCredential sharedInstance];
+        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.credential];
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"oauthCredential"];
+    }
+        
     return YES;
 }
 
@@ -55,12 +81,21 @@
     if (!url) {
         return NO;
     }
+    UIViewController *viewController = ((UINavigationController*)self.window.rootViewController).visibleViewController;
     
     NSURLComponents *components = [NSURLComponents componentsWithString:[url absoluteString]];
     
     for (NSURLQueryItem *item in components.queryItems) {
         if ([item.name isEqualToString:@"code"]) {
-            [self.apiClient setApiCode:item.value];            
+            [self.apiClient.credential setAccessCode:item.value];
+            if ([viewController isKindOfClass:[DLLoginViewController class]]) {
+                [(DLLoginViewController *)viewController hasBeenAuthorized:YES];
+            }
+        }
+        if ([item.name isEqualToString:@"error"]) {
+            if ([viewController isKindOfClass:[DLLoginViewController class]]) {
+                [(DLLoginViewController *)viewController hasBeenAuthorized:NO];
+            }
         }
     }
     return YES;
