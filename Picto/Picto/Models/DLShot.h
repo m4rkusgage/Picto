@@ -18,6 +18,7 @@
 @property (assign, nonatomic) int reboundCount;
 @property (assign, nonatomic) int viewCount;
 @property (assign, nonatomic) int commentCount;
+@property (assign, nonatomic) int shotID;
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *createdAt;
 @property (strong, nonatomic) NSString *shotDescription;

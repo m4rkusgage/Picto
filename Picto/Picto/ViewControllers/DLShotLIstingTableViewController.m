@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationController setNavigationBarHidden:YES];
+    
     self.pageNumber = 1;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"DLShotTableViewCell" bundle:nil]
@@ -29,19 +31,19 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 500;
     
-    [self.apiClient popularShots:self.pageNumber completionHandler:^(id result, NSError *error) {
+   /* [self.apiClient popularShots:self.pageNumber completionHandler:^(id result, NSError *error) {
+        self.pageNumber++;
+        self.shotList = (NSArray *)result;
+        NSLog(@"%@",self.shotList);
+        [self.tableView reloadData];
+    }];*/
+    
+    [self.apiClient oAuthUserShots:self.pageNumber completionHandler:^(id result, NSError *error) {
         self.pageNumber++;
         self.shotList = (NSArray *)result;
         NSLog(@"%@",self.shotList);
         [self.tableView reloadData];
     }];
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (DLDribbbleAPI *)apiClient
