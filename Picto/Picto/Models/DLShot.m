@@ -7,6 +7,11 @@
 //
 
 #import "DLShot.h"
+#import "DLOAuthCredential.h"
+
+@interface DLShot ()
+@property (strong, nonatomic) DLOAuthCredential *credential;
+@end
 
 @implementation DLShot
 
@@ -14,6 +19,7 @@
 {
     self.isAnimated = [dictionary[@"animated"] boolValue];
     
+    self.shotID = [dictionary[@"id"] intValue];
     self.bucketCount = [dictionary[@"buckets_count"] intValue];
     self.likeCount = [dictionary[@"likes_count"] intValue];
     self.reboundCount = [dictionary[@"rebounds_count"] intValue];
@@ -35,9 +41,13 @@
         self.team = team;
     }
     
-    DLUser *user = [[DLUser alloc] init];
-    [user setDataWith:dictionary[@"user"]];
-    self.user = user;
+    if (dictionary[@"user"]) {
+        DLUser *user = [[DLUser alloc] init];
+        [user setDataWith:dictionary[@"user"]];
+        self.user = user;
+    } else {
+        self.user = self.credential.oAuthUser;
+    }
     
     self.imageURLString = dictionary[@"images"][@"normal"];
 }
@@ -48,6 +58,14 @@
         _tags = [[NSMutableArray alloc] init];
     }
     return _tags;
+}
+
+- (DLOAuthCredential *)credential
+{
+    if (!_credential) {
+        _credential = [DLOAuthCredential sharedInstance];
+    }
+    return _credential;
 }
 
 - (NSString *)normalizeDateFormat:(NSString *)date
@@ -63,5 +81,6 @@
     NSString *newDate = [dateFormatter stringFromDate:dates];
     return newDate;
 }
+
 
 @end

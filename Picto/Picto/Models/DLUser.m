@@ -12,6 +12,7 @@
 
 - (void)setDataWith:(NSDictionary *)dictionary
 {
+    self.userID = [dictionary[@"id"] intValue];
     self.username = dictionary[@"username"];
     self.name = dictionary[@"name"];
     self.avatarURL = dictionary[@"avatar_url"];

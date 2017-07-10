@@ -27,7 +27,12 @@ typedef enum : NSUInteger {
 - (void)authorize;
 - (void)getAccessTokenWithView:(UIView *)view completionHandler:(DLResultBlock)completionHandler;
 - (void)getAccessWithAppOnView:(UIView *)view completionHandler:(DLResultBlock)completionHandler;
+
 - (void)popularShots:(int)page completionHandler:(DLResultBlock)completionHandler;
+- (void)oAuthUserShots:(int)page completionHandler:(DLResultBlock)completionHandler;
+
+- (void)oAuthUser:(DLResultBlock)completionHandler;
+- (void)getUser:(NSString *)userID completionHandler:(DLResultBlock)completionHandler;
 
 - (void)setAuthorizationLevel:(DLAccessLevel)access;
 @end
