@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C1E229C1F0F3EA7004D8DC6 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229B1F0F3EA6004D8DC6 /* Constants.m */; };
+		8C1E229D1F0F3EA7004D8DC6 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229B1F0F3EA6004D8DC6 /* Constants.m */; };
+		8C1E22A01F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */; };
+		8C1E22A11F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */; };
+		8C1E22A41F0F5270004D8DC6 /* DLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */; };
+		8C1E22A51F0F5270004D8DC6 /* DLLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */; };
+		8C1E22AA1F0F5309004D8DC6 /* DLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */; };
+		8C1E22AB1F0F5309004D8DC6 /* DLLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */; };
+		8C1E22AE1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */; };
+		8C1E22AF1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */; };
+		8C1E22B31F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */; };
+		8C1E22B41F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */; };
+		8C1E22D01F114FC2004D8DC6 /* DLShotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22CF1F114FC2004D8DC6 /* DLShotTableViewCell.m */; };
+		8C1E22D11F114FC2004D8DC6 /* DLShotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22CF1F114FC2004D8DC6 /* DLShotTableViewCell.m */; };
+		8C1E22D31F114FDF004D8DC6 /* DLShotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22D21F114FDF004D8DC6 /* DLShotTableViewCell.xib */; };
+		8C1E22D41F114FDF004D8DC6 /* DLShotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22D21F114FDF004D8DC6 /* DLShotTableViewCell.xib */; };
+		8C1E22D81F116869004D8DC6 /* DLShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22D71F116869004D8DC6 /* DLShot.m */; };
+		8C1E22D91F11686A004D8DC6 /* DLShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22D71F116869004D8DC6 /* DLShot.m */; };
+		8C1E22DC1F117BAB004D8DC6 /* DLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22DB1F117BAB004D8DC6 /* DLUser.m */; };
+		8C1E22DD1F117BAB004D8DC6 /* DLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22DB1F117BAB004D8DC6 /* DLUser.m */; };
+		8C1E22E81F11AFA8004D8DC6 /* DLTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22E71F11AFA8004D8DC6 /* DLTeam.m */; };
+		8C1E22E91F11AFA8004D8DC6 /* DLTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E22E71F11AFA8004D8DC6 /* DLTeam.m */; };
+		8C1E22F11F11B6D0004D8DC6 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EB1F11B6D0004D8DC6 /* chat.png */; };
+		8C1E22F21F11B6D0004D8DC6 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EB1F11B6D0004D8DC6 /* chat.png */; };
+		8C1E22F31F11B6D0004D8DC6 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EC1F11B6D0004D8DC6 /* eye.png */; };
+		8C1E22F41F11B6D0004D8DC6 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EC1F11B6D0004D8DC6 /* eye.png */; };
+		8C1E22F51F11B6D0004D8DC6 /* landscape-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22ED1F11B6D0004D8DC6 /* landscape-image.png */; };
+		8C1E22F61F11B6D0004D8DC6 /* landscape-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22ED1F11B6D0004D8DC6 /* landscape-image.png */; };
+		8C1E22F71F11B6D0004D8DC6 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EE1F11B6D0004D8DC6 /* like.png */; };
+		8C1E22F81F11B6D0004D8DC6 /* like.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EE1F11B6D0004D8DC6 /* like.png */; };
+		8C1E22F91F11B6D0004D8DC6 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EF1F11B6D0004D8DC6 /* picture.png */; };
+		8C1E22FA1F11B6D0004D8DC6 /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22EF1F11B6D0004D8DC6 /* picture.png */; };
+		8C1E22FB1F11B6D0004D8DC6 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22F01F11B6D0004D8DC6 /* user.png */; };
+		8C1E22FC1F11B6D0004D8DC6 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22F01F11B6D0004D8DC6 /* user.png */; };
+		8C1E22FE1F11E487004D8DC6 /* vertical-ellipsis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22FD1F11E487004D8DC6 /* vertical-ellipsis.png */; };
+		8C1E22FF1F11E487004D8DC6 /* vertical-ellipsis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E22FD1F11E487004D8DC6 /* vertical-ellipsis.png */; };
+		8C1E23011F11E570004D8DC6 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E23001F11E570004D8DC6 /* upload.png */; };
+		8C1E23021F11E570004D8DC6 /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E23001F11E570004D8DC6 /* upload.png */; };
+		8C1E79CA1F1416310048F55F /* upload (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E79C91F1416300048F55F /* upload (1).png */; };
+		8C1E79CB1F1416310048F55F /* upload (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E79C91F1416300048F55F /* upload (1).png */; };
+		8C1E79D01F1417D20048F55F /* ellipsis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E79CF1F1417D20048F55F /* ellipsis.png */; };
+		8C1E79D11F1417D20048F55F /* ellipsis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C1E79CF1F1417D20048F55F /* ellipsis.png */; };
+		8C75D7341F0EBD3C00D6F0E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D7331F0EBD3C00D6F0E0 /* main.m */; };
+		8C75D7371F0EBD3C00D6F0E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D7361F0EBD3C00D6F0E0 /* AppDelegate.m */; };
+		8C75D73D1F0EBD3C00D6F0E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C75D73B1F0EBD3C00D6F0E0 /* Main.storyboard */; };
+		8C75D73F1F0EBD3C00D6F0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C75D73E1F0EBD3C00D6F0E0 /* Assets.xcassets */; };
+		8C75D7421F0EBD3C00D6F0E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C75D7401F0EBD3C00D6F0E0 /* LaunchScreen.storyboard */; };
+		8C75D74D1F0EBD3D00D6F0E0 /* PictoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D74C1F0EBD3D00D6F0E0 /* PictoTests.m */; };
+		8C75D75C1F0ED05900D6F0E0 /* DLDribbbleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D75B1F0ED05900D6F0E0 /* DLDribbbleAPI.m */; };
+		8C75D75D1F0ED05900D6F0E0 /* DLDribbbleAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C75D75B1F0ED05900D6F0E0 /* DLDribbbleAPI.m */; };
+		D3FD6BBAF2FBD6FDE9FAEB0A /* libPods-Picto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3278C008100C427AB45D99 /* libPods-Picto.a */; };
+		F529131E26FEB15FD3C620B4 /* libPods-PictoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7694A8199EBCDA30A351723 /* libPods-PictoTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C75D7491F0EBD3D00D6F0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C75D7271F0EBD3B00D6F0E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C75D72E1F0EBD3C00D6F0E0;
+			remoteInfo = Picto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F00EF5BE066236F928FF2B5 /* Pods-Picto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picto/Pods-Picto.debug.xcconfig"; sourceTree = "<group>"; };
+		31D02164AAC289D9C264E92F /* Pods-PictoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PictoTests/Pods-PictoTests.release.xcconfig"; sourceTree = "<group>"; };
+		690EEF5C8166136567AAADDE /* Pods-Picto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picto/Pods-Picto.release.xcconfig"; sourceTree = "<group>"; };
+		7A3278C008100C427AB45D99 /* libPods-Picto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1E229A1F0F3EA6004D8DC6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = API/Constants.h; sourceTree = "<group>"; };
+		8C1E229B1F0F3EA6004D8DC6 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = API/Constants.m; sourceTree = "<group>"; };
+		8C1E229E1F0F4D2F004D8DC6 /* DLOAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLOAuthCredential.h; path = API/DLOAuthCredential.h; sourceTree = "<group>"; };
+		8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLOAuthCredential.m; path = API/DLOAuthCredential.m; sourceTree = "<group>"; };
+		8C1E22A21F0F5270004D8DC6 /* DLLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLLoginView.h; path = UI/Views/DLLoginView.h; sourceTree = "<group>"; };
+		8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLLoginView.m; path = UI/Views/DLLoginView.m; sourceTree = "<group>"; };
+		8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DLLoginView.xib; path = UI/Nibs/DLLoginView.xib; sourceTree = "<group>"; };
+		8C1E22AC1F0F5414004D8DC6 /* DLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLLoginViewController.h; path = ViewControllers/DLLoginViewController.h; sourceTree = "<group>"; };
+		8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLLoginViewController.m; path = ViewControllers/DLLoginViewController.m; sourceTree = "<group>"; };
+		8C1E22B11F0F78F1004D8DC6 /* DLShotLIstingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLShotLIstingTableViewController.h; path = ViewControllers/DLShotLIstingTableViewController.h; sourceTree = "<group>"; };
+		8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLShotLIstingTableViewController.m; path = ViewControllers/DLShotLIstingTableViewController.m; sourceTree = "<group>"; };
+		8C1E22CE1F114FC2004D8DC6 /* DLShotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLShotTableViewCell.h; path = UI/Cells/DLShotTableViewCell.h; sourceTree = "<group>"; };
+		8C1E22CF1F114FC2004D8DC6 /* DLShotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLShotTableViewCell.m; path = UI/Cells/DLShotTableViewCell.m; sourceTree = "<group>"; };
+		8C1E22D21F114FDF004D8DC6 /* DLShotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DLShotTableViewCell.xib; path = UI/Nibs/DLShotTableViewCell.xib; sourceTree = "<group>"; };
+		8C1E22D61F116869004D8DC6 /* DLShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLShot.h; path = Models/DLShot.h; sourceTree = "<group>"; };
+		8C1E22D71F116869004D8DC6 /* DLShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLShot.m; path = Models/DLShot.m; sourceTree = "<group>"; };
+		8C1E22DA1F117BAB004D8DC6 /* DLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLUser.h; path = Models/DLUser.h; sourceTree = "<group>"; };
+		8C1E22DB1F117BAB004D8DC6 /* DLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLUser.m; path = Models/DLUser.m; sourceTree = "<group>"; };
+		8C1E22E61F11AFA8004D8DC6 /* DLTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLTeam.h; path = Models/DLTeam.h; sourceTree = "<group>"; };
+		8C1E22E71F11AFA8004D8DC6 /* DLTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLTeam.m; path = Models/DLTeam.m; sourceTree = "<group>"; };
+		8C1E22EB1F11B6D0004D8DC6 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chat.png; path = Assets/chat.png; sourceTree = "<group>"; };
+		8C1E22EC1F11B6D0004D8DC6 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eye.png; path = Assets/eye.png; sourceTree = "<group>"; };
+		8C1E22ED1F11B6D0004D8DC6 /* landscape-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "landscape-image.png"; path = "Assets/landscape-image.png"; sourceTree = "<group>"; };
+		8C1E22EE1F11B6D0004D8DC6 /* like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = like.png; path = Assets/like.png; sourceTree = "<group>"; };
+		8C1E22EF1F11B6D0004D8DC6 /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picture.png; path = Assets/picture.png; sourceTree = "<group>"; };
+		8C1E22F01F11B6D0004D8DC6 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = Assets/user.png; sourceTree = "<group>"; };
+		8C1E22FD1F11E487004D8DC6 /* vertical-ellipsis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vertical-ellipsis.png"; sourceTree = "<group>"; };
+		8C1E23001F11E570004D8DC6 /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upload.png; sourceTree = "<group>"; };
+		8C1E79C91F1416300048F55F /* upload (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload (1).png"; sourceTree = "<group>"; };
+		8C1E79CF1F1417D20048F55F /* ellipsis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ellipsis.png; sourceTree = "<group>"; };
+		8C75D72F1F0EBD3C00D6F0E0 /* Picto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C75D7331F0EBD3C00D6F0E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C75D7351F0EBD3C00D6F0E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C75D7361F0EBD3C00D6F0E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C75D73C1F0EBD3C00D6F0E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C75D73E1F0EBD3C00D6F0E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C75D7411F0EBD3C00D6F0E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C75D7431F0EBD3D00D6F0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C75D7481F0EBD3D00D6F0E0 /* PictoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C75D74C1F0EBD3D00D6F0E0 /* PictoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictoTests.m; sourceTree = "<group>"; };
+		8C75D74E1F0EBD3D00D6F0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C75D75A1F0ED05900D6F0E0 /* DLDribbbleAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLDribbbleAPI.h; path = API/DLDribbbleAPI.h; sourceTree = "<group>"; };
+		8C75D75B1F0ED05900D6F0E0 /* DLDribbbleAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLDribbbleAPI.m; path = API/DLDribbbleAPI.m; sourceTree = "<group>"; };
+		A7694A8199EBCDA30A351723 /* libPods-PictoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PictoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78E52C2A2277B8C3E6984A1 /* Pods-PictoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PictoTests/Pods-PictoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C75D72C1F0EBD3C00D6F0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FD6BBAF2FBD6FDE9FAEB0A /* libPods-Picto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C75D7451F0EBD3D00D6F0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F529131E26FEB15FD3C620B4 /* libPods-PictoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C1E22A61F0F5279004D8DC6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22CD1F114FA1004D8DC6 /* Cells */,
+				8C1E22A81F0F528C004D8DC6 /* Nibs */,
+				8C1E22A71F0F5282004D8DC6 /* Views */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8C1E22A71F0F5282004D8DC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22A21F0F5270004D8DC6 /* DLLoginView.h */,
+				8C1E22A31F0F5270004D8DC6 /* DLLoginView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8C1E22A81F0F528C004D8DC6 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22A91F0F5309004D8DC6 /* DLLoginView.xib */,
+				8C1E22D21F114FDF004D8DC6 /* DLShotTableViewCell.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		8C1E22B01F0F5419004D8DC6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22AC1F0F5414004D8DC6 /* DLLoginViewController.h */,
+				8C1E22AD1F0F5414004D8DC6 /* DLLoginViewController.m */,
+				8C1E22B11F0F78F1004D8DC6 /* DLShotLIstingTableViewController.h */,
+				8C1E22B21F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8C1E22CD1F114FA1004D8DC6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22CE1F114FC2004D8DC6 /* DLShotTableViewCell.h */,
+				8C1E22CF1F114FC2004D8DC6 /* DLShotTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8C1E22D51F116834004D8DC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22D61F116869004D8DC6 /* DLShot.h */,
+				8C1E22D71F116869004D8DC6 /* DLShot.m */,
+				8C1E22DA1F117BAB004D8DC6 /* DLUser.h */,
+				8C1E22DB1F117BAB004D8DC6 /* DLUser.m */,
+				8C1E22E61F11AFA8004D8DC6 /* DLTeam.h */,
+				8C1E22E71F11AFA8004D8DC6 /* DLTeam.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8C1E22EA1F11B699004D8DC6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E79CF1F1417D20048F55F /* ellipsis.png */,
+				8C1E79C91F1416300048F55F /* upload (1).png */,
+				8C1E23001F11E570004D8DC6 /* upload.png */,
+				8C1E22FD1F11E487004D8DC6 /* vertical-ellipsis.png */,
+				8C1E22EB1F11B6D0004D8DC6 /* chat.png */,
+				8C1E22EC1F11B6D0004D8DC6 /* eye.png */,
+				8C1E22ED1F11B6D0004D8DC6 /* landscape-image.png */,
+				8C1E22EE1F11B6D0004D8DC6 /* like.png */,
+				8C1E22EF1F11B6D0004D8DC6 /* picture.png */,
+				8C1E22F01F11B6D0004D8DC6 /* user.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8C75D7261F0EBD3A00D6F0E0 = {
+			isa = PBXGroup;
+			children = (
+				8C75D7311F0EBD3C00D6F0E0 /* Picto */,
+				8C75D74B1F0EBD3D00D6F0E0 /* PictoTests */,
+				8C75D7301F0EBD3C00D6F0E0 /* Products */,
+				C962B676FD08CF6D76DF4B94 /* Pods */,
+				A41D84FC8C162071FCF541D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C75D7301F0EBD3C00D6F0E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C75D72F1F0EBD3C00D6F0E0 /* Picto.app */,
+				8C75D7481F0EBD3D00D6F0E0 /* PictoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C75D7311F0EBD3C00D6F0E0 /* Picto */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22D51F116834004D8DC6 /* Models */,
+				8C75D7571F0ECD5A00D6F0E0 /* API */,
+				8C75D7351F0EBD3C00D6F0E0 /* AppDelegate.h */,
+				8C75D7361F0EBD3C00D6F0E0 /* AppDelegate.m */,
+				8C75D73B1F0EBD3C00D6F0E0 /* Main.storyboard */,
+				8C75D73E1F0EBD3C00D6F0E0 /* Assets.xcassets */,
+				8C75D7401F0EBD3C00D6F0E0 /* LaunchScreen.storyboard */,
+				8C75D7431F0EBD3D00D6F0E0 /* Info.plist */,
+				8C75D7321F0EBD3C00D6F0E0 /* Supporting Files */,
+				8C1E22A61F0F5279004D8DC6 /* UI */,
+				8C1E22B01F0F5419004D8DC6 /* ViewControllers */,
+			);
+			path = Picto;
+			sourceTree = "<group>";
+		};
+		8C75D7321F0EBD3C00D6F0E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C1E22EA1F11B699004D8DC6 /* Assets */,
+				8C75D7331F0EBD3C00D6F0E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C75D74B1F0EBD3D00D6F0E0 /* PictoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C75D74C1F0EBD3D00D6F0E0 /* PictoTests.m */,
+				8C75D74E1F0EBD3D00D6F0E0 /* Info.plist */,
+			);
+			path = PictoTests;
+			sourceTree = "<group>";
+		};
+		8C75D7571F0ECD5A00D6F0E0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8C75D75A1F0ED05900D6F0E0 /* DLDribbbleAPI.h */,
+				8C75D75B1F0ED05900D6F0E0 /* DLDribbbleAPI.m */,
+				8C1E229A1F0F3EA6004D8DC6 /* Constants.h */,
+				8C1E229B1F0F3EA6004D8DC6 /* Constants.m */,
+				8C1E229E1F0F4D2F004D8DC6 /* DLOAuthCredential.h */,
+				8C1E229F1F0F4D2F004D8DC6 /* DLOAuthCredential.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		A41D84FC8C162071FCF541D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A3278C008100C427AB45D99 /* libPods-Picto.a */,
+				A7694A8199EBCDA30A351723 /* libPods-PictoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C962B676FD08CF6D76DF4B94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F00EF5BE066236F928FF2B5 /* Pods-Picto.debug.xcconfig */,
+				690EEF5C8166136567AAADDE /* Pods-Picto.release.xcconfig */,
+				B78E52C2A2277B8C3E6984A1 /* Pods-PictoTests.debug.xcconfig */,
+				31D02164AAC289D9C264E92F /* Pods-PictoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C75D72E1F0EBD3C00D6F0E0 /* Picto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C75D7511F0EBD3D00D6F0E0 /* Build configuration list for PBXNativeTarget "Picto" */;
+			buildPhases = (
+				85D9AB493A462470B0036EC9 /* [CP] Check Pods Manifest.lock */,
+				8C75D72B1F0EBD3C00D6F0E0 /* Sources */,
+				8C75D72C1F0EBD3C00D6F0E0 /* Frameworks */,
+				8C75D72D1F0EBD3C00D6F0E0 /* Resources */,
+				7B64835ED692A4DDD4EF434B /* [CP] Embed Pods Frameworks */,
+				865ACEC2A4DFA1F9F9D59B32 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Picto;
+			productName = Picto;
+			productReference = 8C75D72F1F0EBD3C00D6F0E0 /* Picto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C75D7471F0EBD3D00D6F0E0 /* PictoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C75D7541F0EBD3D00D6F0E0 /* Build configuration list for PBXNativeTarget "PictoTests" */;
+			buildPhases = (
+				275FDD6E9515E38FB7436CF1 /* [CP] Check Pods Manifest.lock */,
+				8C75D7441F0EBD3D00D6F0E0 /* Sources */,
+				8C75D7451F0EBD3D00D6F0E0 /* Frameworks */,
+				8C75D7461F0EBD3D00D6F0E0 /* Resources */,
+				4A2A6B48470BF4D8C6FA0155 /* [CP] Embed Pods Frameworks */,
+				B01A8CB36D3B6F159875DEB0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C75D74A1F0EBD3D00D6F0E0 /* PBXTargetDependency */,
+			);
+			name = PictoTests;
+			productName = PictoTests;
+			productReference = 8C75D7481F0EBD3D00D6F0E0 /* PictoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C75D7271F0EBD3B00D6F0E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mark Gage";
+				TargetAttributes = {
+					8C75D72E1F0EBD3C00D6F0E0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 762W2U8JVP;
+						ProvisioningStyle = Automatic;
+					};
+					8C75D7471F0EBD3D00D6F0E0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8C75D72E1F0EBD3C00D6F0E0;
+					};
+				};
+			};
+			buildConfigurationList = 8C75D72A1F0EBD3B00D6F0E0 /* Build configuration list for PBXProject "Picto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C75D7261F0EBD3A00D6F0E0;
+			productRefGroup = 8C75D7301F0EBD3C00D6F0E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C75D72E1F0EBD3C00D6F0E0 /* Picto */,
+				8C75D7471F0EBD3D00D6F0E0 /* PictoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C75D72D1F0EBD3C00D6F0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1E79CA1F1416310048F55F /* upload (1).png in Resources */,
+				8C1E22AA1F0F5309004D8DC6 /* DLLoginView.xib in Resources */,
+				8C1E22FB1F11B6D0004D8DC6 /* user.png in Resources */,
+				8C1E22F51F11B6D0004D8DC6 /* landscape-image.png in Resources */,
+				8C75D7421F0EBD3C00D6F0E0 /* LaunchScreen.storyboard in Resources */,
+				8C1E79D01F1417D20048F55F /* ellipsis.png in Resources */,
+				8C1E22FE1F11E487004D8DC6 /* vertical-ellipsis.png in Resources */,
+				8C1E22F11F11B6D0004D8DC6 /* chat.png in Resources */,
+				8C75D73F1F0EBD3C00D6F0E0 /* Assets.xcassets in Resources */,
+				8C1E22F71F11B6D0004D8DC6 /* like.png in Resources */,
+				8C1E22F91F11B6D0004D8DC6 /* picture.png in Resources */,
+				8C1E23011F11E570004D8DC6 /* upload.png in Resources */,
+				8C1E22F31F11B6D0004D8DC6 /* eye.png in Resources */,
+				8C1E22D31F114FDF004D8DC6 /* DLShotTableViewCell.xib in Resources */,
+				8C75D73D1F0EBD3C00D6F0E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C75D7461F0EBD3D00D6F0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1E22AB1F0F5309004D8DC6 /* DLLoginView.xib in Resources */,
+				8C1E22FF1F11E487004D8DC6 /* vertical-ellipsis.png in Resources */,
+				8C1E22FC1F11B6D0004D8DC6 /* user.png in Resources */,
+				8C1E22FA1F11B6D0004D8DC6 /* picture.png in Resources */,
+				8C1E22D41F114FDF004D8DC6 /* DLShotTableViewCell.xib in Resources */,
+				8C1E22F21F11B6D0004D8DC6 /* chat.png in Resources */,
+				8C1E22F81F11B6D0004D8DC6 /* like.png in Resources */,
+				8C1E22F41F11B6D0004D8DC6 /* eye.png in Resources */,
+				8C1E79D11F1417D20048F55F /* ellipsis.png in Resources */,
+				8C1E23021F11E570004D8DC6 /* upload.png in Resources */,
+				8C1E22F61F11B6D0004D8DC6 /* landscape-image.png in Resources */,
+				8C1E79CB1F1416310048F55F /* upload (1).png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		275FDD6E9515E38FB7436CF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A2A6B48470BF4D8C6FA0155 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictoTests/Pods-PictoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B64835ED692A4DDD4EF434B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picto/Pods-Picto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85D9AB493A462470B0036EC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		865ACEC2A4DFA1F9F9D59B32 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picto/Pods-Picto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B01A8CB36D3B6F159875DEB0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictoTests/Pods-PictoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C75D72B1F0EBD3C00D6F0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1E22A01F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */,
+				8C1E229C1F0F3EA7004D8DC6 /* Constants.m in Sources */,
+				8C1E22A41F0F5270004D8DC6 /* DLLoginView.m in Sources */,
+				8C75D7371F0EBD3C00D6F0E0 /* AppDelegate.m in Sources */,
+				8C1E22B31F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */,
+				8C1E22D81F116869004D8DC6 /* DLShot.m in Sources */,
+				8C1E22D01F114FC2004D8DC6 /* DLShotTableViewCell.m in Sources */,
+				8C1E22DC1F117BAB004D8DC6 /* DLUser.m in Sources */,
+				8C1E22AE1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */,
+				8C75D75C1F0ED05900D6F0E0 /* DLDribbbleAPI.m in Sources */,
+				8C1E22E81F11AFA8004D8DC6 /* DLTeam.m in Sources */,
+				8C75D7341F0EBD3C00D6F0E0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C75D7441F0EBD3D00D6F0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1E22D91F11686A004D8DC6 /* DLShot.m in Sources */,
+				8C1E22AF1F0F5414004D8DC6 /* DLLoginViewController.m in Sources */,
+				8C1E22E91F11AFA8004D8DC6 /* DLTeam.m in Sources */,
+				8C1E22D11F114FC2004D8DC6 /* DLShotTableViewCell.m in Sources */,
+				8C75D75D1F0ED05900D6F0E0 /* DLDribbbleAPI.m in Sources */,
+				8C1E22DD1F117BAB004D8DC6 /* DLUser.m in Sources */,
+				8C75D74D1F0EBD3D00D6F0E0 /* PictoTests.m in Sources */,
+				8C1E22A11F0F4D2F004D8DC6 /* DLOAuthCredential.m in Sources */,
+				8C1E22B41F0F78F1004D8DC6 /* DLShotLIstingTableViewController.m in Sources */,
+				8C1E22A51F0F5270004D8DC6 /* DLLoginView.m in Sources */,
+				8C1E229D1F0F3EA7004D8DC6 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C75D74A1F0EBD3D00D6F0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C75D72E1F0EBD3C00D6F0E0 /* Picto */;
+			targetProxy = 8C75D7491F0EBD3D00D6F0E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C75D73B1F0EBD3C00D6F0E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C75D73C1F0EBD3C00D6F0E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C75D7401F0EBD3C00D6F0E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C75D7411F0EBD3C00D6F0E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C75D74F1F0EBD3D00D6F0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C75D7501F0EBD3D00D6F0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C75D7521F0EBD3D00D6F0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F00EF5BE066236F928FF2B5 /* Pods-Picto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 762W2U8JVP;
+				INFOPLIST_FILE = Picto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mark-gage.Picto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8C75D7531F0EBD3D00D6F0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690EEF5C8166136567AAADDE /* Pods-Picto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 762W2U8JVP;
+				INFOPLIST_FILE = Picto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mark-gage.Picto";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8C75D7551F0EBD3D00D6F0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78E52C2A2277B8C3E6984A1 /* Pods-PictoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PictoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mark-gage.PictoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picto.app/Picto";
+			};
+			name = Debug;
+		};
+		8C75D7561F0EBD3D00D6F0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D02164AAC289D9C264E92F /* Pods-PictoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PictoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mark-gage.PictoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picto.app/Picto";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C75D72A1F0EBD3B00D6F0E0 /* Build configuration list for PBXProject "Picto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C75D74F1F0EBD3D00D6F0E0 /* Debug */,
+				8C75D7501F0EBD3D00D6F0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C75D7511F0EBD3D00D6F0E0 /* Build configuration list for PBXNativeTarget "Picto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C75D7521F0EBD3D00D6F0E0 /* Debug */,
+				8C75D7531F0EBD3D00D6F0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C75D7541F0EBD3D00D6F0E0 /* Build configuration list for PBXNativeTarget "PictoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C75D7551F0EBD3D00D6F0E0 /* Debug */,
+				8C75D7561F0EBD3D00D6F0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C75D7271F0EBD3B00D6F0E0 /* Project object */;
+}

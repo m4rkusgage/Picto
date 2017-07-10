@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shotCell" rowHeight="455" id="aj2-wu-JDH" customClass="DLShotTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="437"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aj2-wu-JDH" id="YMD-uE-qfv">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="437"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hI7-wJ-hGy">
+                        <rect key="frame" x="7" y="5" width="361" height="426.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="REF-Os-Mi3">
+                                <rect key="frame" x="8" y="8" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbv-ud-XG9">
+                                <rect key="frame" x="71" y="8" width="252" height="19"/>
+                                <color key="backgroundColor" red="0.34759935739999998" green="0.75282847880000003" blue="0.89198142290000004" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Title yaya">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NZ-7d-1w1">
+                                <rect key="frame" x="71" y="25" width="252" height="15"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="By Markus">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="2hG-6H-qDV">
+                                <rect key="frame" x="37" y="39" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhj-7I-fHN">
+                                <rect key="frame" x="227" y="402" width="126" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="DATE">
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrj-Iz-jjJ">
+                                <rect key="frame" x="328" y="7" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86844390630000001" green="0.44288289549999998" blue="0.43934333320000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ellipsis.png"/>
+                                <connections>
+                                    <action selector="moreButtonPressed:" destination="aj2-wu-JDH" eventType="touchUpInside" id="iag-TR-M00"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHh-F2-oi8">
+                                <rect key="frame" x="8" y="398" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="upload (1).png"/>
+                                <connections>
+                                    <action selector="shareButtonPressed:" destination="aj2-wu-JDH" eventType="touchUpInside" id="TkP-Bg-gjV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7NZ-7d-1w1" firstAttribute="top" secondItem="Rbv-ud-XG9" secondAttribute="bottom" constant="-2" id="9KD-bd-FMF"/>
+                            <constraint firstItem="Rbv-ud-XG9" firstAttribute="top" secondItem="hI7-wJ-hGy" secondAttribute="top" constant="8" id="Dy5-37-mJA"/>
+                            <constraint firstItem="7NZ-7d-1w1" firstAttribute="leading" secondItem="hI7-wJ-hGy" secondAttribute="leading" constant="71" id="GCC-ZB-Ode"/>
+                            <constraint firstAttribute="trailing" secondItem="7NZ-7d-1w1" secondAttribute="trailing" constant="38" id="Iag-jR-oyu"/>
+                            <constraint firstAttribute="trailing" secondItem="Rbv-ud-XG9" secondAttribute="trailing" constant="38" id="bqr-JD-WHT"/>
+                            <constraint firstItem="Rbv-ud-XG9" firstAttribute="leading" secondItem="hI7-wJ-hGy" secondAttribute="leading" constant="71" id="dqB-Rd-4Cd"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape-image.png" translatesAutoresizingMaskIntoConstraints="NO" id="O8r-oS-UME">
+                        <rect key="frame" x="0.0" y="77" width="375" height="279"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djd-eu-dUZ">
+                        <rect key="frame" x="291" y="359" width="75" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFG-1e-PMH">
+                                <rect key="frame" x="28" y="1" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="123">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="like.png" translatesAutoresizingMaskIntoConstraints="NO" id="cP3-ae-Ukl">
+                                <rect key="frame" x="2" y="3" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="xhc-ba-crq"/>
+                            <constraint firstAttribute="width" constant="75" id="y2c-cg-Mnq"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBy-m0-upe">
+                        <rect key="frame" x="208" y="359" width="75" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53w-og-C38">
+                                <rect key="frame" x="28" y="1" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="123">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chat.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Jv-GP-Mul">
+                                <rect key="frame" x="2" y="3" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="HqG-A6-p4E"/>
+                            <constraint firstAttribute="width" constant="75" id="oTb-tV-tF6"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9m1-Cc-63L">
+                        <rect key="frame" x="125" y="359" width="75" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEV-Xr-ufU">
+                                <rect key="frame" x="28" y="1" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="123">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eye.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hjw-FM-1lN">
+                                <rect key="frame" x="2" y="3" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="LYM-bt-wU6"/>
+                            <constraint firstAttribute="height" constant="25" id="ZkF-5h-MCu"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl0-Lp-HJA">
+                        <rect key="frame" x="7" y="329" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.29803921568627451" blue="0.53725490196078429" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                        <attributedString key="attributedText">
+                            <fragment content="GIF">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="13" name="HelveticaNeue-CondensedBold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <gestureRecognizers/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="hI7-wJ-hGy" secondAttribute="trailing" constant="-1" id="73X-GD-Qr1"/>
+                    <constraint firstItem="O8r-oS-UME" firstAttribute="width" secondItem="YMD-uE-qfv" secondAttribute="height" multiplier="375:436" id="80r-qL-ere"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="djd-eu-dUZ" secondAttribute="trailing" constant="1" id="8HW-cz-Nm4"/>
+                    <constraint firstItem="9m1-Cc-63L" firstAttribute="top" secondItem="O8r-oS-UME" secondAttribute="bottom" constant="3" id="BZ5-b0-NQm"/>
+                    <constraint firstItem="hI7-wJ-hGy" firstAttribute="top" secondItem="YMD-uE-qfv" secondAttribute="topMargin" constant="-3" id="FqU-84-DHx"/>
+                    <constraint firstItem="djd-eu-dUZ" firstAttribute="top" secondItem="O8r-oS-UME" secondAttribute="bottom" constant="3" id="NA7-YE-1hw"/>
+                    <constraint firstItem="djd-eu-dUZ" firstAttribute="leading" secondItem="bBy-m0-upe" secondAttribute="trailing" constant="8" id="Nca-iL-0hA"/>
+                    <constraint firstItem="O8r-oS-UME" firstAttribute="top" secondItem="YMD-uE-qfv" secondAttribute="topMargin" constant="69" id="RCt-g9-qnf"/>
+                    <constraint firstItem="bBy-m0-upe" firstAttribute="top" secondItem="O8r-oS-UME" secondAttribute="bottom" constant="3" id="U0w-kH-ZyR"/>
+                    <constraint firstItem="hI7-wJ-hGy" firstAttribute="leading" secondItem="YMD-uE-qfv" secondAttribute="leadingMargin" constant="-1" id="dbg-Dm-opZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="O8r-oS-UME" secondAttribute="trailing" constant="-8" id="eTV-FG-bVS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="O8r-oS-UME" secondAttribute="bottom" constant="72" id="hm6-eR-yqQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hI7-wJ-hGy" secondAttribute="bottom" constant="-3" id="mqf-C2-nE4"/>
+                    <constraint firstItem="O8r-oS-UME" firstAttribute="leading" secondItem="YMD-uE-qfv" secondAttribute="leadingMargin" constant="-8" id="qZY-9n-faO"/>
+                    <constraint firstItem="9m1-Cc-63L" firstAttribute="leading" secondItem="YMD-uE-qfv" secondAttribute="leadingMargin" constant="117" id="wQT-Zt-maI"/>
+                    <constraint firstItem="bBy-m0-upe" firstAttribute="leading" secondItem="9m1-Cc-63L" secondAttribute="trailing" constant="8" id="yQb-PJ-noN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <gestureRecognizers/>
+            <connections>
+                <outlet property="avatarImageView" destination="REF-Os-Mi3" id="8wH-dq-0hk"/>
+                <outlet property="baseView" destination="hI7-wJ-hGy" id="4FE-Wc-KEY"/>
+                <outlet property="byLabel" destination="7NZ-7d-1w1" id="zfB-do-p68"/>
+                <outlet property="commentCountLabel" destination="53w-og-C38" id="hdt-fP-XZX"/>
+                <outlet property="commentView" destination="bBy-m0-upe" id="hfK-q4-xZO"/>
+                <outlet property="companyImageView" destination="2hG-6H-qDV" id="OJT-TO-vTR"/>
+                <outlet property="createdAtLabel" destination="dhj-7I-fHN" id="0UG-xm-N7R"/>
+                <outlet property="gifBadgeLabel" destination="Yl0-Lp-HJA" id="Hul-r3-aSp"/>
+                <outlet property="likeCountLabel" destination="dFG-1e-PMH" id="BL5-VZ-VNE"/>
+                <outlet property="likeView" destination="djd-eu-dUZ" id="q54-pS-LEz"/>
+                <outlet property="profilePicImageView" destination="REF-Os-Mi3" id="ygF-MS-Zcn"/>
+                <outlet property="shotImageView" destination="O8r-oS-UME" id="DET-Ij-HSp"/>
+                <outlet property="titleLabel" destination="Rbv-ud-XG9" id="tse-jr-v2D"/>
+                <outlet property="viewCountLabel" destination="AEV-Xr-ufU" id="Zu6-SY-AYc"/>
+            </connections>
+            <point key="canvasLocation" x="-57.5" y="58.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat.png" width="64" height="64"/>
+        <image name="ellipsis.png" width="200" height="200"/>
+        <image name="eye.png" width="64" height="64"/>
+        <image name="landscape-image.png" width="512" height="512"/>
+        <image name="like.png" width="64" height="64"/>
+        <image name="upload (1).png" width="64" height="64"/>
+        <image name="user.png" width="64" height="64"/>
+    </resources>
+</document>
