@@ -10,6 +10,7 @@
 
 @interface DLUser : NSObject
 
+@property (assign, nonatomic) int userID;
 @property (strong, nonatomic) NSString *username;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *avatarURL;

@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationController setNavigationBarHidden:NO];
+    
     self.pageNumber = 1;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"DLShotTableViewCell" bundle:nil]
@@ -35,13 +37,6 @@
         NSLog(@"%@",self.shotList);
         [self.tableView reloadData];
     }];
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (DLDribbbleAPI *)apiClient

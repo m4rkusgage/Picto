@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 #import "Constants.h"
 #import "DLShot.h"
+#import "DLUser.h"
 
 @interface DLDribbbleAPI ()
 @property (strong, nonatomic) MBProgressHUD *hud;
@@ -101,8 +102,12 @@
         [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"oauthCredential"];
         [self setAuthorizationLevel:DLAccessLevelOAuth];
         
-        [MBProgressHUD hideHUDForView:view animated:YES];
-        completionHandler(@YES, nil);
+        [self oAuthUser:^(DLUser *result, NSError *error) {
+            self.credential.oAuthUser = result;
+            
+            [MBProgressHUD hideHUDForView:view animated:YES];
+            completionHandler(@YES, nil);
+        }];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error: %@",error);
@@ -151,6 +156,37 @@
 - (void)popularShots:(int)page completionHandler:(DLResultBlock)completionHandler
 {
     [self shots:@"https://api.dribbble.com/v1/shots" page:page completionHandler:completionHandler];
+}
+
+- (void)oAuthUserShots:(int)page completionHandler:(DLResultBlock)completionHandler
+{
+    [self shots:@"https://api.dribbble.com/v1/user/shots" page:page completionHandler:completionHandler];
+}
+
+- (void)oAuthUser:(DLResultBlock)completionHandler
+{
+    [self GET:@"https://api.dribbble.com/v1/user/" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (completionHandler)
+        {
+            if ([responseObject isKindOfClass:[NSDictionary class]]) {
+                NSDictionary *userDict = (NSDictionary *)responseObject;
+                
+                DLUser *user = [[DLUser alloc] init];
+                [user setDataWith:userDict];
+                
+                completionHandler(user, nil);
+            } else {
+                completionHandler(nil, nil);
+            }
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (completionHandler)
+        {
+            completionHandler(nil, error);
+        }
+    }];
 }
 
 - (void)setAuthorizationLevel:(DLAccessLevel)access

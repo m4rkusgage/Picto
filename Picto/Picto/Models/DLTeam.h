@@ -10,6 +10,7 @@
 
 @interface DLTeam : NSObject
 
+@property (assign, nonatomic) int teamID;
 @property (strong, nonatomic) NSString *companyName;
 @property (strong, nonatomic) NSString *companyAvatarURL;
 

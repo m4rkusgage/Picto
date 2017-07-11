@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DLUser.h"
 
 @interface DLOAuthCredential : NSObject<NSCoding>
 
@@ -15,6 +16,7 @@
 @property (copy, nonatomic) NSString *accessToken;
 @property (copy, nonatomic) NSString *accessAppToken;
 @property (copy, nonatomic) NSString *accessCode;
+@property (strong, nonatomic) DLUser *oAuthUser;
 
 + (DLOAuthCredential *)sharedInstance;
 - (BOOL)isLoggedIn;

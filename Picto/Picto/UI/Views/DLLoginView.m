@@ -18,6 +18,10 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    
+    [self.loginButton.layer setCornerRadius:5.0];
+    [self.loginButton.layer setBorderColor:[UIColor whiteColor].CGColor];
+    [self.loginButton.layer setBorderWidth:3.0];
 }
 
 - (IBAction)loginButtonPressed:(id)sender
