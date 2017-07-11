@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController setNavigationBarHidden:NO];
     
     self.pageNumber = 1;
     
@@ -31,14 +31,7 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 500;
     
-   /* [self.apiClient popularShots:self.pageNumber completionHandler:^(id result, NSError *error) {
-        self.pageNumber++;
-        self.shotList = (NSArray *)result;
-        NSLog(@"%@",self.shotList);
-        [self.tableView reloadData];
-    }];*/
-    
-    [self.apiClient oAuthUserShots:self.pageNumber completionHandler:^(id result, NSError *error) {
+    [self.apiClient popularShots:self.pageNumber completionHandler:^(id result, NSError *error) {
         self.pageNumber++;
         self.shotList = (NSArray *)result;
         NSLog(@"%@",self.shotList);

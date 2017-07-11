@@ -20,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES];
+    
     // Do any additional setup after loading the view.
     self.loginView = [[[NSBundle mainBundle] loadNibNamed:@"DLLoginView"
                                    owner:self
@@ -27,6 +29,12 @@
     [self.view addSubview:self.loginView];
     
     [self.loginView setDelegate:self];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (DLDribbbleAPI *)apiClient
